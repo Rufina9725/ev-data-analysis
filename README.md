@@ -1,34 +1,49 @@
-Electric Vehicles Data Analysis (2025 Specs)
-Welcome! This project explores a dataset of electric vehicle specifications, uncovering insights into battery capacity, range, performance, and more. It’s a hands-on exploratory data analysis (EDA) project using Python and Jupyter Notebook.
+# 🚗 EV Range Prediction Using Machine Learning
 
-📌 Goals
-Clean and prepare real-world EV data
+This project predicts the **driving range (in km)** of electric vehicles based on their technical specifications using a Ridge Regression model.
 
-Perform exploratory data analysis (EDA)
+---
 
-Visualize trends across vehicle specs
+## 📊 Project Overview
 
-Compare brands and performance
+- **Dataset Size**: 476 electric vehicles
+- **Goal**: Predict `range_km` from features like top speed, battery capacity, torque, etc.
+- **Target**: `range_km`
+- **Features Used**: 11 numerical features
+- **Missing Values**: Filled using median
+- **Model Used**: Ridge Regression
 
-Understand relationships between features like battery capacity and range
+---
 
-🧰 Tools Used
-Python
+## ⚙️ Model Performance
 
-Pandas, NumPy
+| Metric             | Value         |
+|--------------------|---------------|
+| Baseline MAE       | ~85.62 km     |
+| Ridge Train MAE    | ~19.91 km     |
+| Ridge Test MAE     | ~21.86 km     |
 
-Matplotlib, Seaborn
+✅ Huge improvement from baseline — reduced error by ~75%
 
-Jupyter Notebook
+---
 
-📊 Key Insights
-📈 A strong positive correlation (r = 0.88) exists between battery capacity and range.
+## 📈 Visualization
 
-🚙 Benz models had a surprisingly higher range than Tesla in this dataset.
+Actual vs Predicted EV Range:
 
-⚙️ AWD vehicles had the fastest acceleration compared to FWD and RWD.
 
-🧹 Several missing values were handled using median imputation after analyzing distribution.
 
-📁 Dataset
-Sourced from Kaggle: Electric Vehicles Spec 2025
+
+
+## 🧰 Tools Used
+
+- Python (pandas, numpy)
+- scikit-learn (Ridge, pipeline)
+- seaborn & matplotlib for visualization
+- Git & GitHub for version control
+
+
+
+
+
+
